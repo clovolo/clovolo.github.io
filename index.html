@@ -1,1 +1,91 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clovolo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+SC:wght@100..900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f1d1d;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            margin-right: 24px;
+        }
+        .text-container {
+            margin-left: 64px;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .text-container h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .vertical-divider {
+            background-color: #ffffff;
+            width: 5px;
+            height: 80px;
+            margin: 0 20px;
+        }
+        .horizontal-divider {
+            background-color: #ffffff;
+            display: none;
+            height: 5px;
+            width: 240px;
+            margin: 20px 0;
+        }
+        .lang-en {
+            font-family: 'Comic Neue', sans-serif;
+            font-weight: 700;
+        }
+        .lang-zh {
+            font-family: 'ZCOOL KuaiLe', sans-serif;
+            font-weight: 400;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-right: 0;
+            }
+            .text-container {
+                margin-left: 0;
+                margin-top: 12px;
+                text-align: center;
+            }
+            .vertical-divider {
+                display: none;
+            }
+            .horizontal-divider {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./clovolo.png" height="400px" alt="clovolo" class="logo"/>
+        <div class="divider vertical-divider"></div>
+        <div class="horizontal-divider divider"></div>
+        <div class="text-container">
+            <h1 class="lang-en">Coming Soon</h1>
+            <h1 class="lang-zh">敬请期待</h1>
+        </div>
+    </div>
+</body>
+</html>
